@@ -67,6 +67,7 @@ justify-content: center;
 color: white;
 font-family: var(--font-primaria);
 opacity: 0;
+transition: .7s;
 }
 .hamburguer  span::before{
     content: "";
