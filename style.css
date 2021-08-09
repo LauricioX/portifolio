@@ -34,15 +34,15 @@
 
 .line{
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(81, 3, 155);
     height: .2rem;
-    box-shadow: 0.1rem 0.1rem 1px rgb(0, 0, 0);
+   
     transition: .2s ;
 }
 
 .show #line1{
 transform: rotate(45deg) translate(.6rem,.5rem);
-background-color: blueviolet;
+background-color: rgb(255, 255, 255);
 
 
 }
@@ -54,13 +54,13 @@ background-color: blueviolet;
 
 .show #line3{
     transform: rotate(-45deg) translate(.3rem, -.1rem);
-    background-color: blueviolet;
+    background-color: rgb(255, 255, 255);
 }
 
 .hamburguer span{
 position: absolute;
 left: 3rem;
-background-color: blueviolet;
+background-color: rgb(48, 0, 94);
 height: 2rem;
 width: 6rem;
 display: flex;
@@ -74,7 +74,7 @@ transition: .7s;
 .hamburguer  span::before{
     content: "";
     position: absolute;
-    border-right: .5rem solid blueviolet;
+    border-right: .5rem solid rgb(54, 2, 102);
     border-left: .5rem solid transparent;
     border-top: .5rem solid transparent;
     border-bottom: .5rem solid transparent;
@@ -171,7 +171,7 @@ transform: translateY(10rem) rotateY(-30deg);
 .sidebar{
     width: 20rem;
     height: 100vh;
-    background-color: white;
+    background-color: rgb(145, 5, 226);
     position: fixed;
     top: 0;
     right: -20rem;
@@ -199,10 +199,11 @@ right: 0;
     font-weight: 500;
     font-size: 2rem;
     transition: .2S;
+    color: white;
 
 }
 .menu-link:hover{
-   color: blueviolet;
+   color: rgb(46, 0, 88);
    font-size: 2.1rem;
 
 }
@@ -215,7 +216,7 @@ right: 0;
     justify-content: space-evenly;
 }
 .social-media i{
-    color: blueviolet;
+    color: rgb(255, 255, 255);
     height: 2.5rem;
     width: 2.5rem;
     font-size: 2rem;
@@ -224,8 +225,8 @@ right: 0;
     transition: .11s;
 }
 .social-media i:hover{
-    color: blueviolet;
     font-size: 2.6rem;
+    color: rgb(46, 0, 88);
  
  }
  .sessao-conhecimento{
@@ -236,6 +237,9 @@ right: 0;
  
      
  }
+ /* ==========conhecimentos===== */
+
+
  .conhecimentos{
      display: grid;
      grid-template-columns:repeat(16, 1fr) ;
@@ -402,3 +406,113 @@ right: 0;
     bottom: 2rem;
 visibility: visible;
 }
+
+
+
+
+/* ==========contato========= */
+
+.sessao-contato {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/portifolio/imagens/imagens-contato.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+  }
+  
+  .contato-wrapper {
+    width: 70%;
+    height: 30rem;
+    display: flex;
+  }
+  
+  .contato-left {
+ display: none;
+  }
+  .contato-right {
+    width: 85%;
+    background-color: blueviolet;
+    padding: 1rem 3rem 3rem 3rem;
+    border-radius: 1.5rem;
+  }
+  
+  .sessao-contato h1 {
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-primaria);
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: lighter;
+  }
+  
+  .sessao-contato form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .input-group {
+    position: relative;
+    background-color: transparent;
+  }
+  
+  .field {
+    background: transparent;
+    border: none;
+    width: 20rem;
+    font-size: 1.1rem;
+    font-family: var(--font-primaria);
+    border-bottom: 2px solid #ffffff;
+    height: 3rem;
+    outline: none;
+    margin: 1rem 0;
+    color: white;
+  }
+  
+  .input-group textarea {
+    padding-top: 1rem;
+    max-width: 25rem;
+    max-height: 3rem;
+    
+  }
+  
+  .field-label {
+    position: absolute;
+    left: 0;
+    top: 2rem;
+    font-size: 1.1rem;
+    font-family: var(--font-primaria);
+    text-transform: uppercase;
+    transition: all 0.3s;
+    color: white;
+    font-weight: 100;
+  }
+  
+  .field:focus ~ label{
+ top: 0;
+ font-size: 0.9rem;
+  }
+  .field:focus{
+      color: white;
+  }
+
+  .btn-submit{
+      text-transform: uppercase;
+      width: 80%;
+      height: 2.5rem;
+      background-color: rgba(255, 255, 255, 0.568);
+      font-family: var(--font-primaria);
+      font-size: .9rem;
+      color: rgb(98, 0, 255);
+      border-radius: .5rem;
+      font-weight: 400;
+      border: none;
+      text-shadow: 0 0.1rem rgba(0,0,0,.4);
+      margin-top: 1rem;
+  }
