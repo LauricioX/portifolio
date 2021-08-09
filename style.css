@@ -436,7 +436,7 @@ visibility: visible;
   }
   .contato-right {
     width: 85%;
-    background-color: blueviolet;
+    background-color: rgba(137, 43, 226, 0.767);
     padding: 1rem 3rem 3rem 3rem;
     border-radius: 1.5rem;
   }
@@ -515,4 +515,82 @@ visibility: visible;
       border: none;
       text-shadow: 0 0.1rem rgba(0,0,0,.4);
       margin-top: 1rem;
+      cursor: pointer;
+  }
+
+  /* ========orçamento======= */
+  .sessao-orcamento{
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)),
+    url(/portifolio/imagens/orcamento-img.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: local;
+      object-fit: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .orcamento-wrapper{
+      width: 60%;
+      height: 80%;
+      background-color: rgba(255, 255, 255, 0.733);
+      border-radius: 1.5rem;
+      box-shadow: 0 0.1rem 0.3rem rgba(0,0,0) ;
+      position: relative;
+  }
+  .sessao-orcamento h1{
+      position: absolute;
+      top: -2.5rem;
+      left: 2rem;
+      color: white;
+      font-family: var(--font-primaria);
+      font-size: 1.9rem;
+      text-shadow: 1px 1px 1px rgb(0, 0, 0);
+      font-weight: lighter;
+      background-color: blueviolet;
+      padding: 1rem;
+      box-shadow: 0 0.1rem 0.3rem rgba(0,0,0) ;
+  }
+  .sessao-orcamento form{
+      margin: 4rem;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      column-gap: 2rem;
+      row-gap: 2rem;
+  }
+  
+  .sessao-orcamento label{
+      font-family: var(--font-primaria);
+      color:blueviolet;
+      font-weight: bolder;
+      font-size: 1.2rem;
+  }
+  .sessao-orcamento input[type="number"]{
+      font-family: var(--font-primaria);
+      width: 2.3rem;
+      height: 2rem;
+      font-size: 1.3rem;
+      text-align: center;
+      outline: none;
+      border-radius: .2rem;
+      border: none;
+padding: 0.1;
+  }
+  #botao{
+    width: 80%;
+    height: 2.5rem;
+    background-color: blueviolet;
+    font-family: var(--font-primaria);
+    font-size: .9rem;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    border: none;
+    text-shadow: 0 0.1rem rgba(0,0,0,.4);
+    margin-top: 1rem;
+    cursor: pointer;
+    grid-column: 2;
+    letter-spacing: .1rem;
   }
