@@ -30,7 +30,7 @@
 
 <!-- ==========header======= -->
 
-        <header>
+        <header id="home">
                 <div class="image__wraper">
             <img src="/portifolio/imagens/fundo.jpg" alt="imagen de fundo">
                 </div>
@@ -48,11 +48,11 @@
        <div class="sidebar">
            <nav>
                <ul class="menu">
-                   <li class="menu-item"><a href="#" class="menu-link">home</a></li>
-                   <li class="menu-item"><a href="#" class="menu-link">conhecimento</a></li>
-                   <li class="menu-item"><a href="#" class="menu-link">projetos</a></li>
-                   <li class="menu-item"><a href="#" class="menu-link">contato</a></li>
-                   <li class="menu-item"><a href="#" class="menu-link">orçamento</a></li>
+                   <li class="menu-item"><a href="#home" class="menu-link">home</a></li>
+                   <li class="menu-item"><a href="#conhecimento" class="menu-link">conhecimento</a></li>
+                   <li class="menu-item"><a href="#projetos" class="menu-link">projetos</a></li>
+                   <li class="menu-item"><a href="#contato" class="menu-link">contato</a></li>
+                   <li class="menu-item"><a href="#orcamento" class="menu-link">orçamento</a></li>
                </ul>
            </nav>
 
@@ -67,7 +67,7 @@
          </div>
        </div>
 
-<section class="sessao-conhecimento">
+<section class="sessao-conhecimento" id="conhecimento">
     <div class="sessao-header">
         <h1>conhecimentos</h1>
     </div>
@@ -205,7 +205,7 @@
   </section>
 
   <!-- =========orçamento======= -->
-<section class="sessao-orcamento">
+<section class="sessao-orcamento" id="orcamento">
   <div class="orcamento-wrapper">
     <h1>faça um orçameto</h1>
     <form>
@@ -226,10 +226,33 @@
   </div>
   <label for="prazo">prazo</label>
   <input type="range" name="prazo" id="prazo">
+  <label id="preco">R$ 0,00</label>
   <button id="botao" type="submit">Enviar</button>
     </form>
   </div>
 </section>
+
+<!-- ========rodapé======= -->
+
+<footer>
+<div class="footer-content">
+  <p>
+    copyright &copy; 2021 l-host corporation ltd - todos os direitos reservados
+  </p>
+  <div class="social-list">
+    <ul>
+    <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+    <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
+    <li><a href="#"><i class="ri-github-fill"></i></a></li>
+    </ul>
+  </div>
+</div>
+</footer>
+
+<a href="#home" id="topo">
+  <i class="ri-arrow-up-s-line"></i>
+</a>
+
 
 </body>
 <!-- =========java script===== -->

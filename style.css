@@ -6,7 +6,9 @@
     margin: 0;
     padding: 0;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 /* ========variaveis fontes ===== */
 :root{
     --font-primaria:"baloo da 2",serif;
@@ -540,6 +542,7 @@ visibility: visible;
       border-radius: 1.5rem;
       box-shadow: 0 0.1rem 0.3rem rgba(0,0,0) ;
       position: relative;
+      
   }
   .sessao-orcamento h1{
       position: absolute;
@@ -594,3 +597,50 @@ padding: 0.1;
     grid-column: 2;
     letter-spacing: .1rem;
   }
+
+  /* ======footer======== */
+
+  footer{
+      width: 100%;
+      height: 5rem;
+      background-color: blueviolet;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .footer-content{
+      width: 60%;
+      display: flex;
+      justify-content: space-between;
+  }
+  .footer-content p{
+      font-family: var(--font-primaria);
+      color: white;
+      font-size: 1rem;
+  }
+  .social-list a{
+      margin: 0 3rem;
+      color: white;
+      font-size: 1.2rem;
+
+  }
+  .social-list ul{
+      display: flex;
+
+  }
+  #topo{
+      position: fixed;
+      right: 3rem;
+      bottom: 3rem;
+      height: 3rem;
+      width: 3rem;
+      background-color: white;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     box-shadow: 0 0.1rem 0.3rem rgba(0,0,0) ;
+  }
+  #topo i{
+font-size: 1.9rem;
+  }
+  
